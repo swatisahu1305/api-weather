@@ -1,7 +1,7 @@
  async function fetchweather(city){
 
     try{
-let data= await fetch(`http://api.weatherapi.com/v1/current.json?key=f4db9308621f47cd8e382229251101&q=${city}&aqi=yes`)
+let data= await fetch(`https://api.weatherapi.com/v1/current.json?key=f4db9308621f47cd8e382229251101&q=${city}&aqi=yes`)
 let res= await data.json();
 //  console.log(res)
  weatherdata(res)
